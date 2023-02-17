@@ -1,0 +1,186 @@
+body{
+    background-image: url("Resoucrs/bg.jpg");
+    background-repeat: repeat-y repeat-x;
+    background-size: 150px;
+}
+.mainContainer{
+    border:solid;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom right,#ffebb4, #ffa8f3);
+    width: 90%;
+    margin: auto;
+    height: auto;
+}
+
+.upperSection{
+    text-align: center;
+    border-bottom: violet 2px dottet;
+
+    height: 50px;
+    margin-left: 10%;
+
+}
+.upperSection h1{
+    text-align: center;
+    display: inline;
+    width: 75%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fffebb
+}
+
+.userAccount{
+    width: 20%;
+    display: flex;
+    float: right;
+    justify-content: flex-end;
+}
+.userAccount img{
+    display: inline;
+    background-color: transparent;
+
+}
+
+.navBar{
+  
+
+
+    padding: 0px;
+    
+    background-image: linear-gradient(to right,#e4f2ff,#e5ffbb)
+ 
+    
+}
+.navBar ul{
+    padding: 0px;
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+    
+}
+.navBar li{
+    display: inline;
+    margin-left: 2px;
+    margin-right: 2px;
+    border-right: solid;
+    padding: 5px;
+}
+.navBar li:nth-child(5){
+    border: none;
+}
+.navBar a{
+    text-decoration: none;
+    color: #6b6666;
+}
+a:hover{
+    background-image: url("Resoucrs/bg.jpg");
+    background-size: 150px;
+    color: #6b6666;
+}
+
+.midSection{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    margin-top: 0;
+
+    border: solid;
+    
+}
+#img3{
+  order: 1;
+}
+
+.lowerSection{
+    margin: 5px;
+    padding: 5px;
+
+}
+
+lowerSection{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.products{
+    display: flex;
+    flex-flow: row wrap;
+
+    border-radius: 15px;
+    width: 80%;
+
+}
+.prod{
+    border: solid lightblue;
+    border-radius: 15px;
+    display: inline;
+    padding: 10px;
+    margin: 5px;
+
+}
+
+.alignDescButton{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.alignDescButton p{
+    overflow: auto;
+    font-size: 0.5em;
+
+}
+.alignDescButton button{
+
+    
+    border: solid lightblue;
+    border-radius: 15px;
+}
+
+@media only screen 
+  and (device-width: 390px) 
+  and (device-height: 844px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+        lowerSection{
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+        }
+        .products{
+            display: flex;
+            flex-flow: column wrap;
+        
+            border-radius: 15px;
+            width: 80%;
+        
+        }
+        .prod{
+            border: solid lightblue;
+            border-radius: 15px;
+            display: inline;
+            padding: 10px;
+            margin: 5px;
+        
+        }
+        
+        .alignDescButton{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-evenly;
+        }
+        
+        
+        .alignDescButton p{
+            overflow: auto;
+            font-size: 0.5em;
+        
+        }
+        .alignDescButton button{
+        
+            float:right;
+            border: solid lightblue;
+            border-radius: 15px;
+        }
+        
+
+}
